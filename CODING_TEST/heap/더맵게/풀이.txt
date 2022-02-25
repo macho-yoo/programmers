@@ -1,0 +1,11 @@
+heapq 모듈에 대한 이해만 있으면 쉬운 문제 같다.
+heapq 메서드를 몰라 구글에 heapq 메서드를 보면서 진행했는데 메서드만 알고있었다면 알고리즘 자체는 어렵지 않은 문제입니다.
+
+scoville 리스트를 힙으로 변환하기 위해 heapify 메서드 사용 
+    heapq.heapify(scoville)
+    
+    
+while 문 첫번째 문장에서 if len(scoville) == 1 을 두어서 힙의 길이가 1이 되면 바로 -1 return 할 수 있게 하였다.
+
+그후 첫번째 두번째 최솟값들을 heappop() 하여서 수식을 적용해 주었고 new_food 를 힙에 push하여주었다.
+answer +=1 을 반복문내 실행하여 반복문이 종료되면 return answer
